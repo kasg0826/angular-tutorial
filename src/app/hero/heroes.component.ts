@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {OnInit} from '@angular/core';
 
-import {HeroService} from './hero.service';
+import {HeroService} from '../hero.service';
 
 
 export class Hero {
@@ -13,7 +13,7 @@ export class Hero {
 @Component({
   selector: 'my-heroes',
   templateUrl: './heroes.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['../app.component.css'],
   providers: [HeroService]
 })
 export class HeroesComponent implements OnInit{
